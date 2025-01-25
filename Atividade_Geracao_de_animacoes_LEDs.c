@@ -28,28 +28,30 @@ const char key_map[4][4] = {
 };
 
 // Padrões para a palavra teste
-double T[25] = { 
-    1.0, 1.0, 1.0, 1.0, 1.0,
-    0.0, 0.0, 1.0, 0.0, 0.0,
-    0.0, 0.0, 1.0, 0.0, 0.0,
-    0.0, 0.0, 1.0, 0.0, 0.0,
-    0.0, 0.0, 1.0, 0.0, 0.0,
+int T[5][5][3] = {
+    {{0, 255, 0}, {0, 255, 0}, {0, 255, 0}, {0, 255, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 255, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 255, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 255, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 255, 0}, {0, 0, 0}, {0, 0, 0}}
 };
-double E[25] = { 
-    1.0, 1.0, 1.0, 1.0, 1.0,
-    1.0, 0.0, 0.0, 0.0, 0.0,
-    1.0, 1.0, 1.0, 1.0, 1.0,
-    1.0, 0.0, 0.0, 0.0, 0.0,
-    1.0, 1.0, 1.0, 1.0, 1.0,
+int E[5][5][3] = {
+    {{255, 0, 0}, {255, 0, 0}, {255, 0, 0}, {255, 0, 0}, {255, 0, 0}},
+    {{255, 0, 0}, {0, 0, 0},   {0, 0, 0},   {0, 0, 0},   {0, 0, 0}},
+    {{255, 0, 0}, {255, 0, 0}, {255, 0, 0}, {0, 0, 0},   {0, 0, 0}},
+    {{255, 0, 0}, {0, 0, 0},   {0, 0, 0},   {0, 0, 0},   {0, 0, 0}},
+    {{255, 0, 0}, {255, 0, 0}, {255, 0, 0}, {255, 0, 0}, {255, 0, 0}}
 };
 
-double S[25] = { 
-    1.0, 1.0, 1.0, 1.0, 1.0,
-    1.0, 0.0, 0.0, 0.0, 0.0,
-    1.0, 1.0, 1.0, 1.0, 1.0,
-    0.0, 0.0, 0.0, 0.0, 1.0,
-    1.0, 1.0, 1.0, 1.0, 1.0,
+
+int S[5][5][3] = {
+    {{0, 0, 255}, {0, 0, 255}, {0, 0, 255}, {0, 0, 255}, {0, 0, 255}},
+    {{0, 0, 255}, {0, 0, 0},   {0, 0, 0},   {0, 0, 0},   {0, 0, 0}},
+    {{0, 0, 255}, {0, 0, 255}, {0, 0, 255}, {0, 0, 255}, {0, 0, 255}},
+    {{0, 0, 0}, {0, 0, 0},   {0, 0, 0},   {0, 0, 0},   {0, 0, 255}},
+    {{0, 0, 255}, {0, 0, 255}, {0, 0, 255}, {0, 0, 255}, {0, 0, 255}}
 };
+
 
 double um[25] = { 
     0.0, 1.0, 0.0, 0.0, 0.0,
@@ -58,24 +60,6 @@ double um[25] = {
     0.0, 1.0, 0.0, 0.0, 0.0,
     1.0, 1.0, 1.0, 1.0, 1.0,
 };
-
-double dois[25] = { 
-    1.0, 1.0, 1.0, 1.0, 1.0,
-    0.0, 0.0, 0.0, 0.0, 1.0,
-    1.0, 1.0, 1.0, 1.0, 1.0,
-    1.0, 0.0, 0.0, 0.0, 0.0,
-    1.0, 1.0, 1.0, 1.0, 1.0,
-};
-
-double tres[25] = { 
-    1.0, 1.0, 1.0, 1.0, 1.0,
-    0.0, 0.0, 0.0, 0.0, 1.0,
-    0.0, 1.0, 1.0, 1.0, 1.0,
-    0.0, 0.0, 0.0, 0.0, 1.0,
-    1.0, 1.0, 1.0, 1.0, 1.0,
-};
-
-
 
 
 // Definição de pixel GRB
@@ -101,8 +85,7 @@ void npSetLED(const uint index, const uint8_t r, const uint8_t g, const uint8_t 
 void npClear();
 void npWrite();
 int getIndex(int x, int y);
-void npSetPattern(double desenho[25],  uint8_t r, uint8_t g, uint8_t b);
-
+void npSetPattern(int matriz[5][5][3]);
 
 
 int main() {
@@ -119,8 +102,6 @@ keypad_init();
 
  printf("Teclado Matricial 4x4 - Controle de Matrix 5x5 de LEDs\n");
 
-
- // Não faz mais nada. Loop infinito.
  while (true) {
 
      {
@@ -267,31 +248,31 @@ int getIndex(int x, int y) {
  * Função para acender os LEDs com base nas matrizes de desenho.
  * LEDs com valor 1 no vetor serão acesos com a cor especificada.
  */
-void npSetPattern(double desenho[25], uint8_t r, uint8_t g, uint8_t b) {
-    double conversao[25] = { 
-        desenho[24], desenho[23], desenho[22], desenho[21], desenho[20],
-        desenho[15], desenho[16], desenho[17], desenho[18], desenho[19],
-        desenho[14], desenho[13], desenho[12], desenho[11], desenho[10],
-        desenho[5], desenho[6], desenho[7], desenho[8], desenho[9],
-        desenho[4], desenho[3], desenho[2], desenho[1], desenho[0]
-    };
-    
-    for (int i = 0; i < 25; i++) {
-        if (conversao[i] > 0.0) { // Acende apenas os LEDs indicados pelo vetor
-            npSetLED(i, r, g, b);
-        } else { // Desliga os LEDs restantes
-            npSetLED(i, 0, 0, 0);
+void npSetPattern(int matriz[5][5][3]) {
+    int index = 0; // Índice para mapear a matriz 2D para o vetor linear de LEDs (0 a 24)
+int conversao[5][5][3]=
+{
+    {{matriz[4][4][0],matriz[4][4][1], matriz[4][4][2]},{matriz[4][3][0],matriz[4][3][1], matriz[4][3][2]}, {matriz[4][2][0],matriz[4][2][1], matriz[4][2][2]}, {matriz[4][1][0],matriz[4][1][1], matriz[4][1][2]}, {matriz[4][0][0],matriz[4][0][1], matriz[4][0][2]}},
+    {{matriz[3][0][0],matriz[3][0][1], matriz[3][0][2]}, {matriz[3][1][0],matriz[3][1][1], matriz[3][1][2]}, {matriz[3][2][0],matriz[3][2][1], matriz[3][2][2]}, {matriz[3][3][0],matriz[3][3][1], matriz[3][3][2]}, {matriz[3][4][0],matriz[3][4][1], matriz[3][4][2]}},
+    {{matriz[2][4][0],matriz[2][4][1], matriz[2][4][2]}, {matriz[2][3][0],matriz[2][3][1], matriz[2][3][2]}, {matriz[2][2][0],matriz[2][2][1], matriz[2][2][2]}, {matriz[2][1][0],matriz[2][1][1], matriz[2][1][2]}, {matriz[2][0][0],matriz[2][0][1], matriz[2][0][2]}},
+    {{matriz[1][0][0],matriz[1][0][1], matriz[1][0][2]},{matriz[1][1][0],matriz[1][1][1], matriz[1][1][2]}, {matriz[1][2][0],matriz[1][2][1], matriz[1][2][2]}, {matriz[1][3][0],matriz[1][3][1], matriz[1][3][2]}, {matriz[1][4][0],matriz[1][4][1], matriz[1][4][2]}},
+    {{matriz[0][4][0],matriz[0][4][1], matriz[0][4][2]}, {matriz[0][3][0],matriz[0][3][1], matriz[0][3][2]}, {matriz[0][2][0],matriz[0][2][1], matriz[0][2][2]}, {matriz[0][1][0],matriz[0][1][1], matriz[0][1][2]}, {matriz[0][0][0],matriz[0][0][1], matriz[0][0][2]}}
+};
+
+
+    for (int linha = 0; linha < 5; linha++) {
+        for (int coluna = 0; coluna < 5; coluna++) {
+            int r = conversao[linha][coluna][0]; // Componente R
+            int g = conversao[linha][coluna][1]; // Componente G
+            int b = conversao[linha][coluna][2]; // Componente B
+
+            // Acende o LED na posição correspondente
+            npSetLED(index, r, g, b);
+            index++;
         }
     }
     npWrite(); // Envia os dados para a matriz de LEDs
 }
-
-
-
-
-
-
-
 
 
 // Função para controlar os LEDs e buzzer
@@ -300,29 +281,18 @@ void control_ledsebuzz(char key)
 
             if (key == '0')
     {
-  npSetPattern(T, 255, 255, 255);
+  npSetPattern(T);
      sleep_ms(1000);
-     npSetPattern(E, 255, 255, 255);
+      npSetPattern(E);
      sleep_ms(1000);
-     npSetPattern(S, 255, 255, 255);
+      npSetPattern(S);
      sleep_ms(1000);
-     npSetPattern(T, 255, 255, 255);
+      npSetPattern(T);
      sleep_ms(1000);
-     npSetPattern(E, 255, 255, 255);
+           npSetPattern(E);
      sleep_ms(1000);
-     npSetPattern(um, 255, 255, 255);
-     sleep_ms(1000);
-     npSetPattern(dois, 255, 255, 255);
-     sleep_ms(1000);
-     npSetPattern(tres, 255, 255, 255);
-     sleep_ms(1000);
-
     }
-                if (key == '9')
-    {
-        npSetLED(6, 0, 0, 255); //define qual pixel será ligado e sua cor
-        npWrite(); // Envia os dados para apagar os LEDs
-    }
+    
         if (key == 'A')
     {
         npClear(); //Apaga todos os leds
