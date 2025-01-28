@@ -15,3 +15,7 @@ Exemplo de animação presente no projeto:
 ![New Piskel (1)](https://github.com/user-attachments/assets/3bba530f-5f10-427a-ab4b-19f75a42a7da)
 
 Luan Evangelista dos Santos
+
+![GifPoke](https://github.com/user-attachments/assets/b96f293d-266d-4c6d-ad93-ab8735414c1f)
+
+Átila Conceição De Goes
