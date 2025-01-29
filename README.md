@@ -19,3 +19,12 @@ Luan Evangelista dos Santos
 ![GifPoke](https://github.com/user-attachments/assets/b96f293d-266d-4c6d-ad93-ab8735414c1f)
 
 Átila Conceição De Goes
+
+![coracao](https://github.com/user-attachments/assets/a202537c-482c-46b8-9542-b2731cbc8314)
+
+Alana Virginia Reis Santana Santos
+
+![NewPiskel](https://github.com/user-attachments/assets/ad4411ef-748a-42c8-8437-78a35006b83a)
+
+Camila de Araújo Bastos
+
