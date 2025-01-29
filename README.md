@@ -42,6 +42,7 @@ Cada tecla numérica ativa uma animação ou padrão específico na matriz de LE
 
 | **Tecla** | **Animações**                 |
 |-----------|-----------------------------------------------|
+| `0`       | João Gabriel Furtado:  ![Animação 0](https://github.com/user-attachments/assets/0cb82b74-d9f5-4a91-8ae9-76a7c25c4bab) |
 | `1`       | Luan Evangelista dos Santos: ![Animação 1](https://github.com/user-attachments/assets/3bba530f-5f10-427a-ab4b-19f75a42a7da) |
 | `2`       | Alana Virginia Reis Santana Santos: ![Animação 2](https://github.com/user-attachments/assets/a202537c-482c-46b8-9542-b2731cbc8314)  |
 | `3`       | Humberto Henrique Santos Sardeiro: ![Animação 3](https://github.com/user-attachments/assets/ca0ea99c-c5bb-4098-9fad-b92e27254304) |
