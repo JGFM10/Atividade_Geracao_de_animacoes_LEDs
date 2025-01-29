@@ -34,7 +34,6 @@ Este projeto implementa um sistema para controlar uma matriz de LEDs (5x5) e um 
 | `C`       | Liga todos os LEDs na cor vermelha (80% brilho).|
 | `D`       | Liga todos os LEDs na cor verde (50% brilho).|
 | `#`       | Liga todos os LEDs na cor branca (20% brilho).|
-| `0`       | Mostra a palavra "teste" na matriz e controla o buzzer.|
 ---
 
 ## Animações Personalizadas
