@@ -45,10 +45,10 @@ Cada tecla numérica ativa uma animação ou padrão específico na matriz de LE
 |-----------|-----------------------------------------------|
 | `1`       | Luan Evangelista dos Santos: ![Animação 1](https://github.com/user-attachments/assets/3bba530f-5f10-427a-ab4b-19f75a42a7da) |
 | `2`       | Alana Virginia Reis Santana Santos: ![Animação 2](https://github.com/user-attachments/assets/a202537c-482c-46b8-9542-b2731cbc8314)  |
-| `3`       | Humberto Henrique Santos Sardeiro: *(GIF da animação aqui)* |
+| `3`       | Humberto Henrique Santos Sardeiro: ![Animação 3](https://github.com/user-attachments/assets/ca0ea99c-c5bb-4098-9fad-b92e27254304) |
 | `4`       | Camila de Araújo Bastos: ![Animação 4](https://github.com/user-attachments/assets/ad4411ef-748a-42c8-8437-78a35006b83a)  |
 | `5`       | Átila Conceição De Goes: ![Animação 5](https://github.com/user-attachments/assets/b96f293d-266d-4c6d-ad93-ab8735414c1f)|
-| `8`       | Humberto Alexandre Santos Sardeiro: *(GIF da animação aqui)* |
+| `8`       | Humberto Alexandre Santos Sardeiro: ![Animação 8](https://github.com/user-attachments/assets/787ff2a0-41bf-4fcc-8cfe-6423c29556a2) |
 | `9`       | Breno Novais Couto: ![animacao 7](https://github.com/user-attachments/assets/056c048f-9534-4a2e-b0e5-0fad13cd43e9) |
 
 ---
