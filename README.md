@@ -53,4 +53,6 @@ Cada tecla numérica ativa uma animação ou padrão específico na matriz de LE
 
 Confira o funcionamento do projeto no vídeo abaixo:  
 
+https://youtu.be/x38TSwMcSXA
+
 ---
