@@ -49,3 +49,8 @@ Cada tecla numérica ativa uma animação ou padrão específico na matriz de LE
 | `5`       | Átila Conceição De Goes: ![Animação 4](https://github.com/user-attachments/assets/b96f293d-266d-4c6d-ad93-ab8735414c1f)|
 
 ---
+## Vídeo Demonstrativo
+
+Confira o funcionamento do projeto no vídeo abaixo:  
+
+---
