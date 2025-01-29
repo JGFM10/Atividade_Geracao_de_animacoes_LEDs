@@ -34,7 +34,7 @@ Este projeto implementa um sistema para controlar uma matriz de LEDs (5x5) e um 
 | `C`       | Liga todos os LEDs na cor vermelha (80% brilho).|
 | `D`       | Liga todos os LEDs na cor verde (50% brilho).|
 | `#`       | Liga todos os LEDs na cor branca (20% brilho).|
-
+| `0`       | Mostra a palavra "teste" na matriz e controla o buzzer.|
 ---
 
 ## Animações Personalizadas
@@ -45,8 +45,11 @@ Cada tecla numérica ativa uma animação ou padrão específico na matriz de LE
 |-----------|-----------------------------------------------|
 | `1`       | Luan Evangelista dos Santos: ![Animação 1](https://github.com/user-attachments/assets/3bba530f-5f10-427a-ab4b-19f75a42a7da) |
 | `2`       | Alana Virginia Reis Santana Santos: ![Animação 2](https://github.com/user-attachments/assets/a202537c-482c-46b8-9542-b2731cbc8314)  |
-| `4`       | Camila de Araújo Bastos: ![Animação 3](https://github.com/user-attachments/assets/ad4411ef-748a-42c8-8437-78a35006b83a)  |
-| `5`       | Átila Conceição De Goes: ![Animação 4](https://github.com/user-attachments/assets/b96f293d-266d-4c6d-ad93-ab8735414c1f)|
+| `3`       | Humberto Henrique Santos Sardeiro: *(GIF da animação aqui)* |
+| `4`       | Camila de Araújo Bastos: ![Animação 4](https://github.com/user-attachments/assets/ad4411ef-748a-42c8-8437-78a35006b83a)  |
+| `5`       | Átila Conceição De Goes: ![Animação 5](https://github.com/user-attachments/assets/b96f293d-266d-4c6d-ad93-ab8735414c1f)|
+| `8`       | Humberto Alexandre Santos Sardeiro: *(GIF da animação aqui)* |
+| `9`       | Breno Novais Couto: *GIF da animação aqui)* |
 
 ---
 ## Vídeo Demonstrativo
