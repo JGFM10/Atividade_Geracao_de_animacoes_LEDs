@@ -23,3 +23,8 @@ Luan Evangelista dos Santos
 ![coracao](https://github.com/user-attachments/assets/a202537c-482c-46b8-9542-b2731cbc8314)
 
 Alana Virginia Reis Santana Santos
+
+![NewPiskel](https://github.com/user-attachments/assets/ad4411ef-748a-42c8-8437-78a35006b83a)
+
+Camila de Araújo Bastos
+
