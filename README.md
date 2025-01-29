@@ -49,7 +49,7 @@ Cada tecla numérica ativa uma animação ou padrão específico na matriz de LE
 | `4`       | Camila de Araújo Bastos: ![Animação 4](https://github.com/user-attachments/assets/ad4411ef-748a-42c8-8437-78a35006b83a)  |
 | `5`       | Átila Conceição De Goes: ![Animação 5](https://github.com/user-attachments/assets/b96f293d-266d-4c6d-ad93-ab8735414c1f)|
 | `8`       | Humberto Alexandre Santos Sardeiro: *(GIF da animação aqui)* |
-| `9`       | Breno Novais Couto: *GIF da animação aqui)* |
+| `9`       | Breno Novais Couto: ![animacao 7](https://github.com/user-attachments/assets/056c048f-9534-4a2e-b0e5-0fad13cd43e9) |
 
 ---
 ## Vídeo Demonstrativo
