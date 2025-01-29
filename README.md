@@ -41,11 +41,11 @@ Este projeto implementa um sistema para controlar uma matriz de LEDs (5x5) e um 
 
 Cada tecla numérica ativa uma animação ou padrão específico na matriz de LEDs:
 
-| **Tecla** | **Responsável pela Animação**                 |
+| **Tecla** | **Animações**                 |
 |-----------|-----------------------------------------------|
 | `1`       | Luan Evangelista dos Santos: ![Animação 1](https://github.com/user-attachments/assets/3bba530f-5f10-427a-ab4b-19f75a42a7da) |
-| `2`       | Alana Virginia Reis Santana Santos: ![Animação 3](https://github.com/user-attachments/assets/a202537c-482c-46b8-9542-b2731cbc8314)  |
-| `4`       | Camila de Araújo Bastos: ![Animação 4](https://github.com/user-attachments/assets/ad4411ef-748a-42c8-8437-78a35006b83a)  |
-| `5`       | Átila Conceição De Goes: ![Animação 2](https://github.com/user-attachments/assets/b96f293d-266d-4c6d-ad93-ab8735414c1f)|
+| `2`       | Alana Virginia Reis Santana Santos: ![Animação 2](https://github.com/user-attachments/assets/a202537c-482c-46b8-9542-b2731cbc8314)  |
+| `4`       | Camila de Araújo Bastos: ![Animação 3](https://github.com/user-attachments/assets/ad4411ef-748a-42c8-8437-78a35006b83a)  |
+| `5`       | Átila Conceição De Goes: ![Animação 4](https://github.com/user-attachments/assets/b96f293d-266d-4c6d-ad93-ab8735414c1f)|
 
 ---
